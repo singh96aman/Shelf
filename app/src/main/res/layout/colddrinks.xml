@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_height="520dp"
+        android:layout_width="fill_parent">
+    </ListView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listview1"
+        android:background="#000000"
+        android:id="@+id/table1">
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/txtcart"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:text="Cart : Empty"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/listview1"
+        />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="#c40a26"
+                android:textColor="#fffb00"
+                android:text="Check Out"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listview1"
+                android:id="@+id/btncheckout"
+
+                />
+
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
